@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+
+  
+    <div class="container">
+       
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">about</a>
+                </div>
+            </div>
+             
+            <div class="right-side">
+                <div class="brand">
+                    <div>HUMPHREY CASTRO</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/IMG1.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/LogoCode.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Coding is the process of using a programming language to get a computer to behave how you want it to. Every line of code tells the computer to do something, and a document full of lines of code is called a script. Each script is designed to carry out a job
+                    </div>
+                </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/IMG2.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/LogoMusic.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Music's purpose is to express and modulate emotion. Music's primary use is mood control
+                    </div>
+                </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/IMG4.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/LogoGames.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        A video game is an electronic game that involves interaction with a user interface or input device -- such as a joystick, controller, keyboard, or motion sensing devices, to generate visual feedback for a player.
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+    </div>
+          
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem =>{
+        portfolioItem.addEventListener('mouseover', ()=> {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', ()=> {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
